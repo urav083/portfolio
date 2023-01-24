@@ -1,0 +1,42 @@
+@use "./variables" as *;
+header {
+    height: 100vh;
+    width: 100vw;
+    background-color: $darkBlue;
+    display: flex;
+    color: $white;
+}
+
+.headerNavDiv {
+    display: flex;
+    justify-content: center;
+    font-family: $baseFont;
+    font-size: 1.6rem;
+    nav {
+        width: 50%;
+    }
+    ul {
+        display: flex;
+        padding: 5%;
+        margin: 0 auto;
+        li {
+            margin: 0 auto;
+        }
+    }
+}
+
+.headerBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15% 5%;
+    h1 {
+        font-family: $headerFont;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 8rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}

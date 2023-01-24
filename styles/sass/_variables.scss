@@ -1,9 +1,23 @@
-// $primaryColor: #B3EB95;
-// $secondaryColor: #CCC;
-// $baseFont: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$headerFont: 'Playfair Display',
+serif;
+$baseFont: 'Source Sans Pro',
+sans-serif;
+$black: #222527;
+$darkBlue: #424B6D;
+$medBlue: #5169BD;
+$lightBlue: #CAD2EC;
+$white: #F2F4F5;
+$orange: #EEAF98;
 // example of variable use
 // h1 {
 //     color: $primaryColor;
 //     background-color: $secondaryColor;
 //     font-family: $baseFont;
 // }
+@mixin sectionHeading($color) {
+    font-size: 6rem;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: $color;
+}

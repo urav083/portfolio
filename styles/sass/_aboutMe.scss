@@ -1,0 +1,11 @@
+@use "./variables" as *;
+.aboutMe {
+    width: 65%;
+    margin: 5% auto;
+    text-align: center;
+    h2 {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        @include sectionHeading($medBlue);
+    }
+}

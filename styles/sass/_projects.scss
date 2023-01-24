@@ -1,0 +1,11 @@
+@use "./variables" as *;
+.projectsBG {
+    text-align: center;
+    background-color: $white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    h2 {
+        margin-bottom: 2%;
+        @include sectionHeading($black);
+    }
+}

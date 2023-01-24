@@ -1,0 +1,25 @@
+@use "./variables" as *;
+.skillsBG {
+    text-align: center;
+    background-color: $lightBlue;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    h2 {
+        margin-bottom: 2%;
+        @include sectionHeading($black);
+    }
+}
+
+.skillsIcons {
+    ul {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        li {
+            margin: 2%;
+            i {
+                font-size: 6.4rem;
+            }
+        }
+    }
+}

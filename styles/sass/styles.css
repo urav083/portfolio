@@ -255,12 +255,159 @@ html {
   overflow: hidden;
 }
 
-html {
+:root {
   font-size: 62.5%;
+}
+:root body {
+  font-size: 1.6rem;
+}
+
+html,
+body,
+h1,
+h2,
+p,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
   /* makes font 10px */
 }
 
-h1 {
+button,
+input[type=submit],
+input[type=reset] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-color: #424B6D;
+  display: flex;
+  color: #F2F4F5;
+}
+
+.headerNavDiv {
+  display: flex;
+  justify-content: center;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
-  font-size: 16px;
+}
+.headerNavDiv nav {
+  width: 50%;
+}
+.headerNavDiv ul {
+  display: flex;
+  padding: 5%;
+  margin: 0 auto;
+}
+.headerNavDiv ul li {
+  margin: 0 auto;
+}
+
+.headerBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15% 5%;
+}
+.headerBody h1 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 8rem;
+}
+.headerBody h2 {
+  font-size: 2rem;
+}
+
+.aboutMe {
+  width: 65%;
+  margin: 5% auto;
+  text-align: center;
+}
+.aboutMe h2 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 6rem;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: #5169BD;
+}
+
+.skillsBG {
+  text-align: center;
+  background-color: #CAD2EC;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.skillsBG h2 {
+  margin-bottom: 2%;
+  font-size: 6rem;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: #222527;
+}
+
+.skillsIcons ul {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.skillsIcons ul li {
+  margin: 2%;
+}
+.skillsIcons ul li i {
+  font-size: 6.4rem;
+}
+
+.projectsBG {
+  text-align: center;
+  background-color: #F2F4F5;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.projectsBG h2 {
+  margin-bottom: 2%;
+  font-size: 6rem;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: #222527;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #EEAF98;
+  border: none;
+  color: #222527;
+  font-weight: 600;
+  padding: 12px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 2% 3%;
+}
+
+p {
+  line-height: 2.4rem;
 }/*# sourceMappingURL=styles.css.map */
