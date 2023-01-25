@@ -1,0 +1,10 @@
+@use "./variables" as *;
+.getInTouchBG {
+    text-align: center;
+    background-color: $medBlue;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    h2 {
+        @include sectionHeading($white);
+    }
+}
