@@ -48,39 +48,51 @@ const fetchThreeTypes = pokemon.typeURLS.map(async(url) => {
     const response = await fetch(url);
     const data = await response.json();
     const singleArray = data.pokemon
-
+    
     const singleArrayURLS = singleArray.map((data) => {
         return data.pokemon.url
     });
-
+    
     const singlePokemonTypePromises = singleArrayURLS.map(async(url) => {
         const response = await fetch(url)
         const data = await response.json();
-
+        
         return data
     })
-
+    
     const allPokemon = await Promise.all(singlePokemonTypePromises)
-        // console.log(allPokemon);
+    // console.log(allPokemon);
     const allPokemonFiltered = allPokemon.filter((pokemon) => {
         return pokemon.id <= 151;
     })
-
+    
     console.log(allPokemonFiltered);
-
-
+    
+    
     // const genOne = singlePokemonTypePromises.filter((data) => {
-
+        
     //     return data.id <= 151;
     // })
-
-
-
-
-
+    
+    
+    
+    
+    
     // array.filter((data) => {
-    //     console.log(data.pokemon.url)
-    // })
-    // console.log(data);
-    return data
-});
+        //     console.log(data.pokemon.url)
+        // })
+        // console.log(data);
+        return data
+    });
+    
+    
+    
+    const aFunction = function () {
+        const thing = {};
+        thing.x = "xyz"   
+
+    }
+
+    aFunction()
+
+    console.log(thing.x);

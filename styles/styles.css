@@ -435,6 +435,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 60%;
+  margin: 0 auto;
 }
 .projects li {
   display: -webkit-box;
@@ -443,6 +445,15 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.projects button {
+  margin-left: 0;
+  margin-right: 0;
+}
+.projects .viewCode {
+  margin-left: 5%;
 }
 
 .projectImage {
@@ -459,6 +470,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 .projectImage img {
   width: 100%;
@@ -469,14 +482,40 @@ header {
   width: 40%;
   padding-left: 1%;
   padding-right: 1%;
+  margin: 0;
+  text-align: left;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .projectInfo h3 {
   color: #222527;
   font-size: 2.4rem;
+  margin: 0;
 }
 .projectInfo h4 {
   color: #424B6D;
   font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 2%;
+}
+
+.projectInfoTwo {
+  text-align: right;
+}
+
+.projectImageTwo {
+  margin-right: 0;
+  margin-left: 3%;
 }
 
 .wrapper {

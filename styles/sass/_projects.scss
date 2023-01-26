@@ -1,9 +1,11 @@
 @use "./variables" as *;
+
 .projectsBG {
     text-align: center;
     background-color: $white;
     padding-top: 5%;
     padding-bottom: 5%;
+
     h2 {
         margin-bottom: 2%;
         @include sectionHeading($darkBlue);
@@ -13,9 +15,23 @@
 .projects {
     display: flex;
     justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+
     li {
         display: flex;
         justify-content: center;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    button {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .viewCode {
+        margin-left: 5%;
     }
 }
 
@@ -27,6 +43,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-basis: 50%;
+
     img {
         width: 100%;
         height: 90%;
@@ -37,12 +55,32 @@
     width: 40%;
     padding-left: 1%;
     padding-right: 1%;
+    margin: 0;
+    text-align: left;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     h3 {
         color: $black;
         font-size: 2.4rem;
+        margin: 0;
     }
+
     h4 {
         color: $darkBlue;
         font-size: 1.6rem;
+        margin-top: 0;
+        margin-bottom: 2%;
     }
+}
+
+.projectInfoTwo {
+    text-align: right;
+}
+
+.projectImageTwo {
+    margin-right: 0;
+    margin-left: 3%;
 }
