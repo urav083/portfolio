@@ -1,5 +1,6 @@
 @use "./variables" as *;
 @use "./setup";
+@use "./global";
 @use "./header";
 @use "./aboutMe";
 @use "./skills";
@@ -7,37 +8,3 @@
 @use "./projects";
 @use "./footer";
 @use "./animations";
-.wrapper {
-    width: 90%;
-    margin: 0 auto;
-}
-
-button {
-    background-color: $orange;
-    border: none;
-    color: $black;
-    font-weight: 600;
-    padding: 12px 36px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.6rem;
-    margin: 2% 3%;
-}
-
-p {
-    line-height: 2.4rem;
-}
-
-a {
-text-decoration: none;
-color: inherit;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-// * {
-//     border: 1px blue solid;
-// }
