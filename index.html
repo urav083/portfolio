@@ -10,25 +10,26 @@
     <script src="https://kit.fontawesome.com/6e7ae56e57.js" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Sans+Pro:wght@400;600&display=swap"
+        rel="stylesheet">
 
     <title>Umai's Portfolio</title>
 </head>
 
 <body>
-    <header>
+    <div class="star">*</div>
+    <header id="home">
         <div class="wrapper">
             <div class="headerNavDiv">
                 <nav>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
+                        <li> <a href="#home">Home</a> </li>
+                        <li> <a href="#aboutMe">About</a> </li>
+                        <li> <a href="#projects">Projects</a> </li>
+                        <li> <a href="#contact">Contact</a> </li>
                     </ul>
                 </nav>
             </div>
@@ -41,42 +42,47 @@
     </header>
 
     <main>
-        <div class="wrapper">
+        <div class="wrapper js-scroll" id="aboutMe">
             <div class="aboutMe">
                 <h2>about me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam minus quae fugiat saepe magnam! Magni fugit eius necessitatibus, officia dolorem at esse vero amet beatae libero dignissimos odit voluptatem accusantium tenetur iure
-                    fugiat, consequuntur mollitia sunt velit quis voluptates enim similique. Veniam beatae atque quod quidem unde! Aut, soluta tempore. Eaque rerum velit sit? Vero fugiat consectetur quae maxime inventore!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam minus quae fugiat saepe magnam!
+                    Magni fugit eius necessitatibus, officia dolorem at esse vero amet beatae libero dignissimos odit
+                    voluptatem accusantium tenetur iure
+                    fugiat, consequuntur mollitia sunt velit quis voluptates enim similique. Veniam beatae atque quod
+                    quidem unde! Aut, soluta tempore. Eaque rerum velit sit? Vero fugiat consectetur quae maxime
+                    inventore!</p>
             </div>
         </div>
         <div class="skillsBG">
-            <div class="wrapper">
+            <div class="wrapper js-scroll">
                 <h2>skills</h2>
                 <div class="skillsIcons">
                     <ul>
                         <li>
-                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-html5 skillIcon"></i>
                             <h3>html</h3>
                         </li>
                         <li>
-                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-css3-alt skillIcon"></i>
                             <h3>css</h3>
                         </li>
                         <li>
-                            <i class="fa-brands fa-sass"></i>
+                            <i class="fa-brands fa-sass skillIcon"></i>
                             <h3>sass</h3>
                         </li>
-                        <li><i class="fa-brands fa-square-js"></i>
+                        <li><i class="fa-brands fa-square-js skillIcon"></i>
                             <h3>javascript</h3>
                         </li>
                         <li>
-                            <i class="fa-brands fa-react"></i>
+                            <i class="fa-brands fa-react skillIcon"></i>
                             <h3>react</h3>
                         </li>
                         <li>
-                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-github skillIcon"></i>
                             <h3>github/git</h3>
                         </li>
                         <li>
+                            <!-- <i class="fa-brands fa-github skillIcon"></i> -->
                             <i class="devicon-firebase-plain"></i>
                             <h3>firebase</h3>
                         </li>
@@ -85,17 +91,19 @@
                 </div>
             </div>
         </div>
-        <div class="projectsBG">
-            <div class="wrapper">
+        <div class="projectsBG" id="projects">
+            <div class="wrapper js-scroll">
                 <h2>projects</h2>
                 <div class="projects">
                     <ul>
                         <li>
-                            <div class="projectImage"><img src="./assets/Batman-Begins-f677ee0.jpg" alt="project one preview"></div>
+                            <div class="projectImage"><img src="./assets/Batman-Begins-f677ee0.jpg"
+                                    alt="project one preview"></div>
                             <div class="projectInfo">
                                 <h3>project one</h3>
                                 <h4>html, css, javascript</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, expedita ipsam. Explicabo fugit atque eligendi. Eveniet aliquid voluptatibus ullam ad!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, expedita ipsam. Explicabo
+                                    fugit atque eligendi. Eveniet aliquid voluptatibus ullam ad!</p>
                                 <div class="projectButtons">
                                     <button class="viewLive">view live</button>
                                     <button class="viewCode">view code</button>
@@ -103,33 +111,59 @@
                             </div>
                         </li>
                         <li>
-                            
+
                             <div class="projectInfo projectInfoTwo">
                                 <h3>project one</h3>
                                 <h4>html, css, javascript</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, expedita ipsam. Explicabo fugit atque eligendi. Eveniet aliquid voluptatibus ullam ad!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, expedita ipsam. Explicabo
+                                    fugit atque eligendi. Eveniet aliquid voluptatibus ullam ad!</p>
                                 <div class="projectButtons">
                                     <button class="viewLive">view live</button>
                                     <button class="viewCode">view code</button>
                                 </div>
                             </div>
-                            <div class="projectImage projectImageTwo"><img src="./assets/Batman-Begins-f677ee0.jpg" alt="project two preview"></div>
+                            <div class="projectImage projectImageTwo"><img src="./assets/Batman-Begins-f677ee0.jpg"
+                                    alt="project two preview"></div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="getInTouchBG">
-            <div class="wrapper">
+        <div class="getInTouchBG" id="contact">
+            <div class="wrapper js-scroll">
                 <h2>get in touch</h2>
-                <div class="skillsIcons">
+                <div class="contactIcons">
                     <ul>
-                        <li>hello</li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><i class="fa-brands fa-github"></i></li>
+                        <li><i class="fa-solid fa-envelope"></i></li>
                     </ul>
+                </div>
+                <div class="getInTouchText">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repellendus qui beatae minus
+                        consectetur est voluptatibus quasi! Ea natus cum at perferendis, alias molestiae maiores.</p>
+                </div>
+                <div class="getInTouchForm">
+                    <form action="submit" method="#" name="myForm">
+                        <label for="name">name</label>
+                        <input type="text" id="name" name="name" required>
+                        <br>
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <label for="message">message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <br>
+                        <!-- <input type="submit" value="Submit"> -->
+                        <button type="submit" name="submit">submit</button>
+                    </form>
                 </div>
             </div>
         </div>
 
+        <footer>
+            <h3>Built in 2023 by Umai Rav</h3>
+        </footer>
 
     </main>
 

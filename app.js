@@ -44,55 +44,90 @@ const pokemon = {};
 // https://pokeapi.co/api/v2/type/10/
 pokemon.typeURLS = ['https://pokeapi.co/api/v2/type/10/', 'https://pokeapi.co/api/v2/type/11/', 'https://pokeapi.co/api/v2/type/12/'];
 
-const fetchThreeTypes = pokemon.typeURLS.map(async(url) => {
+const fetchThreeTypes = pokemon.typeURLS.map(async (url) => {
     const response = await fetch(url);
     const data = await response.json();
     const singleArray = data.pokemon
-    
+
     const singleArrayURLS = singleArray.map((data) => {
         return data.pokemon.url
     });
-    
-    const singlePokemonTypePromises = singleArrayURLS.map(async(url) => {
+
+    const singlePokemonTypePromises = singleArrayURLS.map(async (url) => {
         const response = await fetch(url)
         const data = await response.json();
-        
+
         return data
     })
-    
+
     const allPokemon = await Promise.all(singlePokemonTypePromises)
     // console.log(allPokemon);
     const allPokemonFiltered = allPokemon.filter((pokemon) => {
         return pokemon.id <= 151;
     })
-    
+
     console.log(allPokemonFiltered);
-    
-    
+
+
     // const genOne = singlePokemonTypePromises.filter((data) => {
-        
+
     //     return data.id <= 151;
     // })
-    
-    
-    
-    
-    
+
+
+
+
+
     // array.filter((data) => {
-        //     console.log(data.pokemon.url)
-        // })
-        // console.log(data);
-        return data
-    });
-    
-    
-    
-    const aFunction = function () {
-        const thing = {};
-        thing.x = "xyz"   
+    //     console.log(data.pokemon.url)
+    // })
+    // console.log(data);
+    return data
+});
 
-    }
 
-    aFunction()
 
-    console.log(thing.x);
+// Page Scrolling Animations
+const scrollElements = document.querySelectorAll(".js-scroll");
+
+// scrollElements.forEach((el) => {
+//     el.style.opacity = 0.5
+// })
+
+// create function to determine when element is in view
+
+const elementInView = (el) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return (
+        elementTop <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+};
+
+// create const to add scrolled class
+const addScrolled = (el) => {
+    el.classList.add("scrolled");
+    // el.style.opacity = 1
+}
+// create const to add scrolled class
+const removeScrolled = (el) => {
+    el.classList.remove("scrolled");
+    // el.style.opacity = 1
+}
+
+// Combine to animate
+
+const scrollAnimation = () => {
+    scrollElements.forEach((el) => {
+        if (elementInView(el)) {
+            addScrolled(el);
+        } else {
+            removeScrolled(el);
+        }
+    })
+}
+
+
+window.addEventListener('scroll', () => {
+    scrollAnimation();
+
+})

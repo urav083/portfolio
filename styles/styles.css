@@ -394,9 +394,30 @@ header {
 }
 .skillsIcons ul li {
   margin: 2%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .skillsIcons ul li i {
   font-size: 6.4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.skillsIcons ul li i {
+  color: black;
+}
+.skillsIcons ul li i:hover {
+  color: blue;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+.skillsIcons ul li svg:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.skillIcon:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .getInTouchBG {
@@ -411,6 +432,82 @@ header {
   font-family: "Playfair Display", serif;
   font-style: italic;
   color: #F2F4F5;
+}
+
+.contactIcons {
+  color: #EEAF98;
+  margin-top: 1%;
+  font-size: 2rem;
+}
+.contactIcons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contactIcons ul li {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.getInTouchText {
+  margin-top: 4%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.getInTouchText p {
+  width: 45%;
+  color: #F2F4F5;
+  text-align: center;
+}
+
+form input,
+form label,
+form textarea {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  color: #F2F4F5;
+  resize: none;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+form label {
+  text-transform: uppercase;
+  margin-bottom: 0.5%;
+  text-align: left;
+}
+
+.getInTouchForm {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.getInTouchForm form {
+  width: 80%;
+}
+.getInTouchForm form input {
+  padding-top: 0.65%;
+  padding-bottom: 0.65%;
 }
 
 .projectsBG {
@@ -518,6 +615,33 @@ header {
   margin-left: 3%;
 }
 
+footer {
+  text-align: center;
+  background-color: #424B6D;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  color: #F2F4F5;
+}
+
+.js-scroll {
+  opacity: 0.1;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+body {
+  position: relative;
+}
+
+.star {
+  position: absolute;
+  font-size: 10rem;
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -538,4 +662,13 @@ button {
 
 p {
   line-height: 2.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
 }

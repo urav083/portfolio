@@ -1,10 +1,82 @@
 @use "./variables" as *;
+
 .getInTouchBG {
     text-align: center;
     background-color: $medBlue;
     padding-top: 5%;
     padding-bottom: 5%;
+
     h2 {
         @include sectionHeading($white);
+    }
+}
+
+.contactIcons {
+    color: $orange;
+    margin-top: 1%;
+    font-size: 2rem;
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+    }
+}
+
+.getInTouchText {
+    margin-top: 4%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    p {
+        width: 45%;
+        color: $white;
+        text-align: center;
+    }
+}
+
+// turning off all default styling for form
+form input,
+form label,
+form textarea {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    color: $white;
+    resize: none;
+    // background: transparent;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+form label {
+    text-transform: uppercase;
+    margin-bottom: 0.5%;
+    text-align: left;
+}
+
+// styling the form
+.getInTouchForm {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+
+    form {
+        width: 80%;
+        input {
+            padding-top: 0.65%;
+            padding-bottom: 0.65%;
+        }
     }
 }

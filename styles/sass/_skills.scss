@@ -1,9 +1,11 @@
 @use "./variables" as *;
+
 .skillsBG {
     text-align: center;
     background-color: $lightBlue;
     padding-top: 5%;
     padding-bottom: 5%;
+
     h2 {
         margin-bottom: 2%;
         @include sectionHeading($black);
@@ -15,11 +17,39 @@
         display: flex;
         justify-content: center;
         text-transform: uppercase;
+
         li {
             margin: 2%;
+            transition: 0.5s;
+
+            // .devicon-firebase-plain:hover {
+            //     transform: translateY(-10px);
+            // }
             i {
                 font-size: 6.4rem;
+                transition: 0.5s;
+                // &:hover {
+                //     transform: translateY(-10px);
+                // }
+            }
+
+            i {
+                color: black;
+
+                &:hover {
+                    color: blue;
+                    transform: translateY(-10px);
+                }
+            }
+            svg:hover {
+                
+                transform: translateY(-10px);
             }
         }
+
     }
+}
+
+.skillIcon:hover {
+    transform: translateY(-10px);
 }
