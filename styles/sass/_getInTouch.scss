@@ -80,3 +80,21 @@ form label {
         }
     }
 }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+.getInTouchForm form {
+        width: 100%;
+        // input {
+        //     width: 80%;
+        // }
+    }
+    .getInTouchText p {
+        width: 100%;
+    }
+    form input,
+    form label,
+    form textarea {
+        width: 80%;
+    }
+}

@@ -21,13 +21,28 @@
             i {
                 font-size: 6.4rem;
                 transition: 0.5s;
-            }
-            i {
                 color: black;
                 &:hover {
                     color: blue;       
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .skillsIcons {
+            ul {                
+                flex-wrap: wrap;
+                li {
+                    margin: 0%;
+                    flex-basis: 45%;   
+                }
+            }
+        }
+    .skillsBG {
+        h2 {
+            margin-bottom: 4%;
         }
     }
 }

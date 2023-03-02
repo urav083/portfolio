@@ -129,5 +129,4 @@ const scrollAnimation = () => {
 
 window.addEventListener('scroll', () => {
     scrollAnimation();
-
 })

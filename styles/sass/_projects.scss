@@ -15,7 +15,7 @@
 .projects {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
 
     li {
@@ -28,10 +28,6 @@
     button {
         margin-left: 0;
         margin-right: 0;
-    }
-
-    .viewCode {
-        margin-left: 5%;
     }
 }
 
@@ -49,8 +45,7 @@
     img {
         width: 100%;
         height: 90%;
-          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-        // filter: blur(0.5px);
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -86,4 +81,59 @@
 .projectImageTwo {
     margin-right: 0;
     margin-left: 3%;
+}
+
+@media (max-width: 940px) {
+    .projects {
+        width: 100%;
+    }
+
+    .projects li {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectInfo {
+        align-items: center;
+    }
+
+    .projectButtons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .projects {
+            .viewCode {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .projectInfoTwo {
+        text-align: left;
+        order: 2
+    }
+
+    .projectImageTwo {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 2%;
+        order: 1;
+    }
+    .projectImage {
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .projectInfo {
+        width: 100%;
+    }
 }
